@@ -1,5 +1,5 @@
 const CONFIG = {
-    version: '5.2.1',
+    version: '5.2.2',
     afkWebhook: "https://discord.com/api/webhooks/1346656934178062377/oU7ZgrJhOw6ynr-Hvo23ch8VDsmCOop7nwg-BA8_PEV8KfrO7OH5AXBiLbns5CmebnCe",
     timeGap: 300,
     cooldown: 5 * 60 * 1000,
@@ -19,7 +19,7 @@ if (!GM_getValue("discordUserId")) {
     GM_setValue("discordUserId", prompt("Enter your Discord User ID for AFK notifications:"))
 }
 if (!GM_getValue("alertSound")) {
-    GM_setValue("alertSound", "./src/sounds/afkCheck.mp3")
+    GM_setValue("alertSound", "https://github.com/osso-a/EyDa7vh2r8rAYCbXAn3x/blob/main/src/sounds/afkCheck.mp3")
 }
 if (!GM_getValue("userToken")) {
     GM_setValue("userToken", (Math.random() + 1).toString(36).substring(2))
