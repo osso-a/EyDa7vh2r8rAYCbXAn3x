@@ -61,7 +61,7 @@ function handleAFKAlert(text, x, y, radius, startAngle, endAngle, counterclockwi
                 content: `<@${GM_getValue("discordUserId")}>`,
                 embeds: [{
                     title: "AFK Check ⚠️",
-                    description: `${afkCheckCounts.number} AFK checks\nSession started <t:${afkCheckCounts.startTime}:R>\nDifficulty: ${(1 / radius).toFixed(2)}%`,
+                    description: `${afkCheckCounts.number} AFK checks\nSession started <t:${afkCheckCounts.startTime}:R>\nDifficulty: ${(1 / radius).toFixed(2)}`,
                     footer: {
                         text: `${GM_getValue("userToken")} | ${CONFIG.version} | ${versionHash}`
                     },
