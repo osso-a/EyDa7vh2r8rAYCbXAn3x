@@ -19,7 +19,7 @@ if (!GM_getValue("discordUserId")) {
     GM_setValue("discordUserId", prompt("Enter your Discord User ID for AFK notifications:"))
 }
 if (!GM_getValue("alertSound")) {
-    GM_setValue("alertSound", "https://github.com/osso-a/EyDa7vh2r8rAYCbXAn3x/raw/refs/heads/main/src/sounds/afkCheck.mp3")
+    GM_setValue("alertSound", "https://raw.githubusercontent.com/osso-a/EyDa7vh2r8rAYCbXAn3x/refs/heads/main/src/sounds/afkCheck.mp3")
 }
 if (!GM_getValue("userToken")) {
     GM_setValue("userToken", (Math.random() + 1).toString(36).substring(2))
